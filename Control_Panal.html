@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Panal</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+      body {
+        background-color: #e7e7e7;
+      }
+      .buttons_container {
+        position: absolute;
+        top: 9vh;
+        left: 10vw;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        width: 10vw;
+        height: 70vh;
+      }
+
+      .discription_container {
+        position: absolute;
+        top: 10vh;
+        left: 30vw;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        width: 70vw;
+        height: 68vh;
+        font-size: xx-large;
+      }
+      .students,
+      .subjects,
+      .marks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 13vw;
+        height: 13vh;
+        border: 2px solid #555555;
+        color: black;
+        font-size: 1.5vw;
+        letter-spacing: 1px;
+        border-radius: 8px;
+        transition-duration: 0.4s;
+      }
+      .marks {
+        border-color: #f44336;
+      }
+      .subjects {
+        border-color: #008cba;
+      }
+      .marks:hover {
+        background-color: #f44336;
+        color: white;
+      }
+      .students:hover {
+        background-color: #555555;
+        color: white;
+      }
+      .subjects:hover {
+        background-color: #008cba;
+        color: white;
+      }
+      .studnets_discription {
+        color: #555555;
+      }
+      .subjects_discription {
+        color: #008cba;
+      }
+      .marks_discription {
+        color: #f44336;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons_container">
+      <a href="Inserting_Students.php" target="_blank">
+        <button class="students">Studnets</button></a
+      >
+      <a href="Inserting_Students_Subjects.php" target="_blank">
+        <button class="subjects">Subjects</button></a
+      >
+      <a href="Inserting_Students_Marks.php" target="_blank">
+        <button class="marks">Marks</button></a
+      >
+    </div>
+    <div class="discription_container">
+      <div class="studnets_discription">
+        ----To Insert New Students Into The System
+      </div>
+      <div class="subjects_discription">
+        ----To Insert The Studnet's Subjects
+      </div>
+      <div class="marks_discription">
+        ----To Insert The Marks Of Studnet's Subjects
+      </div>
+    </div>
+  </body>
+</html>
